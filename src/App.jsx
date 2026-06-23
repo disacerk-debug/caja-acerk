@@ -4,8 +4,8 @@ import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, R
 const APP_NAME="Caja Acerk"; const APP_ICON="🖨️";
 
 // ─── SUPABASE CONNECTION ──────────────────────────────────────────────────────
-const SUPABASE_URL="https://exwfrjasmwaljrolkhw.supabase.co";
-const SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV4d2ZyamFzbXdhbGpyb2xqa2h3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE5MzMxNjQsImV4cCI6MjA5NzUwOTE2NH0.2YQ4hZTHu2ftBtY8lQ9YsJ8rIqkLx8xc2vva5Sxt0t4";
+const SUPABASE_URL="https://ssybajbgzgivtfbjrwju.supabase.co";
+const SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzeWJhamJnemdpdnRmYmpyd2p1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE5MzUwMDYsImV4cCI6MjA5NzUxMTAwNn0.rn1ohFxXNCoIUzgr6fdyAW9Fh7IFvRpBMtJj_GW0kuE";
 
 async function sbRequest(path,options={}){
   const url=`${SUPABASE_URL}/rest/v1/${path}`;
