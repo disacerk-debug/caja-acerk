@@ -293,14 +293,6 @@ function LoginScreen({data,setData,onLogin,err,users}){
         <div style={{marginTop:14}}><FInput label="Contraseña" value={data.password} onChange={v=>setData(d=>({...d,password:v}))} type="password" placeholder="••••••••" onEnter={onLogin}/></div>
         {err&&<div style={{marginTop:12,color:"#EF4444",fontSize:12,textAlign:"center"}}>{err}</div>}
         <button onClick={onLogin} style={{marginTop:20,width:"100%",padding:"13px",background:"linear-gradient(135deg,#6366F1,#8B5CF6)",border:"none",borderRadius:10,color:"#fff",fontWeight:700,fontSize:15}}>Iniciar sesión</button>
-        <div style={{marginTop:20,background:"#0F1117",borderRadius:10,padding:12}}>
-          <p style={{color:"#64748B",fontSize:11,marginBottom:8,fontWeight:700,textTransform:"uppercase",letterSpacing:1}}>Demo</p>
-          {users.map(u=>(
-            <div key={u.id} style={{display:"flex",justifyContent:"space-between",fontSize:11,color:"#94A3B8",padding:"2px 0",flexWrap:"wrap",gap:4}}>
-              <span>{u.email}</span><span style={{color:"#6366F1"}}>{u.password}</span><span style={{color:u.role==="admin"?"#EF4444":"#10B981",textTransform:"capitalize"}}>{u.role}</span>
-            </div>
-          ))}
-        </div>
       </div>
       <style>{`*{box-sizing:border-box;margin:0;padding:0}input,select{outline:none!important}`}</style>
     </div>
